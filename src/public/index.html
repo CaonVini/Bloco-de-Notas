@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco de Notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Aqui vai os Elementos -->
+    <div>
+        <!-- Barra superior / Moldura -->
+        <h2>Bloco de Notas</h2>
+    </div>
+    <textarea placeholder="Digite aqui suas anotações"></textarea>
+
+    <script>
+        // todo o funcionamento do Bloco de notas //
+
+        const texto = document.querySelector("textarea");
+        const corpo = document.querySelector("body")
+
+        texto.addEventListener("change", function (evento){
+            localStorage.setItem("texto", evento.target.value);
+
+        })
+
+
+        window.onload = function() {
+            // para quando a janela carregar
+            const textoSalvo = localStorage.getItem("texto");
+            texto.innerHTML = textoSalvo
+        }
+    </script>
+
+</body>
+</html>

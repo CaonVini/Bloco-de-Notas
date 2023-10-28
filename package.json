@@ -1,0 +1,15 @@
+{
+  "name": "bloco-de-notas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "electron ./src/index.js"
+  },
+  "keywords": [],
+  "author": "ViniCaon",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^27.0.2"
+  }
+}
