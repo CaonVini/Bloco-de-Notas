@@ -6,7 +6,7 @@ app.whenReady()
             height: 550,
             width: 450,
             frame: false,
-            resizable: false;
+            resizable: false
         })
 
         janela.loadFile("./public/index.html")
